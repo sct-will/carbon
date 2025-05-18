@@ -7,7 +7,7 @@
 
 // @ts-nocheck
 import React from 'react';
-import { HeaderGlobalAction } from '@carbon/react';
+import { HeaderGlobalAction, HeaderGlobalBar } from '@carbon/react';
 import figma from '@figma/code-connect';
 
 figma.connect(
@@ -21,9 +21,11 @@ figma.connect(
       }),
     },
     example: ({ children, isActive }) => (
-      <HeaderGlobalAction isActive={isActive} onClick={() => {}}>
-        {children}
-      </HeaderGlobalAction>
+      <HeaderGlobalBar>
+           <HeaderGlobalAction isActive={isActive} onClick={() => {}}>
+             {children}
+           </HeaderGlobalAction>
+      </HeaderGlobalBar>
     ),
   }
 );
