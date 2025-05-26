@@ -62,6 +62,8 @@ figma.connect(
       return (
         <Dropdown
           {...props}
+          items={items}
+          titleText={"text"}
           id="id"
           initialSelectedItem={items[0]}
           itemToString={(item) => (item ? item.text : '')}

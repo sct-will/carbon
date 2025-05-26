@@ -6,7 +6,7 @@
  */
 
 import React from 'react';
-import { Accordion } from '@carbon/react';
+import { Accordion, AccordionItem } from '@carbon/react';
 import figma from '@figma/code-connect';
 
 figma.connect(
@@ -28,10 +28,7 @@ figma.connect(
       }),
     },
     example: ({ children, accordionItem }) => (
-      <Accordion
-        size={accordionItem.size}
-        align={accordionItem.align}
-        isFlush={accordionItem.isFlush}>
+      <Accordion size={"lg"} align={"start"} isFlush={false}>
         {children}
       </Accordion>
     ),

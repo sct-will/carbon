@@ -28,7 +28,7 @@ figma.connect(
       // item3: figma.boolean('Item 3'),
     },
     example: ({ rowCellItem, ...props }) => (
-      <ContainedListItem disabled={false}>
+      <ContainedListItem disabled={false} action={() => console.log('Item clicked')}>
         List item content
       </ContainedListItem>
     ),
