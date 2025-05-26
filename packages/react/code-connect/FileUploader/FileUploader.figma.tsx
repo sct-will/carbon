@@ -32,7 +32,13 @@ figma.connect(
         Disabled: 'disabled',
       }),
     },
-    example: ({ ...props }) => <FileUploader {...props} />,
+    example: ({ ...props }) => 
+    <FileUploader
+      labelTitle={"Upload files"}
+      labelDescription={"Only .jpg, .png, and .pdf allowed"}
+      size={"md"}
+      disabled={false}
+  />,
   }
 );
 

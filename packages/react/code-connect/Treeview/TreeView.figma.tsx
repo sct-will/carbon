@@ -24,10 +24,15 @@ figma.connect(
       children: figma.children(['Branch node item']),
     },
     example: ({ children, treeNode }) => (
-      <TreeView size={treeNode.size}>
-        {/* Must nest TreeNodes accurately */}
-        {children}
-      </TreeView>
+    <TreeView size={"sm"}>
+      <TreeNode label={"Root Node"} isExpanded={true}>
+        <TreeNode label={"Child Node 1"} isExpanded={true}>
+          <TreeNode label={"Grandchild Node 1"} />
+          <TreeNode label={"Grandchild Node 2"} />
+        </TreeNode>
+        <TreeNode label={"Child Node 2"} />
+      </TreeNode>
+    </TreeView>
     ),
   }
 );

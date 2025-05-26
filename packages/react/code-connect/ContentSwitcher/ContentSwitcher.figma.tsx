@@ -6,7 +6,7 @@
  */
 
 import React from 'react';
-import { ContentSwitcher } from '@carbon/react';
+import { ContentSwitcher, Switch } from '@carbon/react';
 import figma from '@figma/code-connect';
 
 figma.connect(
@@ -22,9 +22,11 @@ figma.connect(
       }),
     },
     example: ({ size, children }) => (
-      <ContentSwitcher onChange={function noRefCheck() {}} size={size}>
-        {children}
-      </ContentSwitcher>
+    <ContentSwitcher onChange={() => {}} size={"md"}>
+      <Switch name="option-1" text="Option 1" />
+      <Switch name="option-2" text="Option 2" />
+      <Switch name="option-3" text="Option 3" />
+    </ContentSwitcher>
     ),
   }
 );

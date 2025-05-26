@@ -46,9 +46,21 @@ figma.connect(
       // }),
     },
     example: ({ ...props }) => (
-      <DatePicker type="simple">
-        <DatePickerInput {...props} id="date-picker-simple" />
-      </DatePicker>
+      <DatePicker type={"simple"}>
+          <DatePickerInput
+            id={"date-picker-simple"}
+            labelText={"Select a date"}
+            placeholder={"MM/DD/YYYY"}
+            disabled={false}
+            invalid={false}
+            warn={false}
+            helperText={"Enter a valid date"}
+            invalidText={"Invalid date format"}
+            warnText={"Date may be unavailable"}
+            size={"md"}
+            readOnly={false}
+          />
+        </DatePicker>
     ),
   }
 );

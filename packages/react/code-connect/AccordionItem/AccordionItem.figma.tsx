@@ -23,10 +23,9 @@ figma.connect(
       children: figma.instance('Swap slot'),
     },
     example: ({ title, disabled, open, content, children }) => (
-      <AccordionItem title={title} disabled={disabled} open={open}>
-        <p>{content}</p>
-        {children}
-      </AccordionItem>
+    <AccordionItem title={"Section Title"} disabled={false} open={true}>
+      <p>Content for this accordion section</p>
+    </AccordionItem>
     ),
   }
 );

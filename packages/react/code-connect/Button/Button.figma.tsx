@@ -43,27 +43,10 @@ figma.connect(
       renderIcon: figma.instance('Swap icon'),
     },
     example: ({ ...props, buttonText }) => {
-      return <Button {...props}>{buttonText}</Button>;
+    <Button kind={"primary"} size={"lg"} disabled={false}>
+      button text
+    </Button>
     },
   }
 );
 
-figma.connect(
-  ButtonSkeleton,
-  'https://www.figma.com/file/YAnB1jKx0yCUL29j6uSLpg/(v11)-All-themes---Carbon-Design-System?type=design&node-id=1854-1776&mode=dev',
-  {
-    variant: { State: 'Skeleton' },
-    props: {
-      size: figma.enum('Size', {
-        Large: 'lg',
-        Medium: 'md',
-        Small: 'sm',
-        'Extra large': 'xl',
-        '2x large': '2xl',
-      }),
-    },
-    example: ({ size }) => {
-      return <ButtonSkeleton size={size} />;
-    },
-  }
-);

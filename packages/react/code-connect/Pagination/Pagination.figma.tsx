@@ -23,11 +23,11 @@ figma.connect(
     },
     example: ({ size }) => (
       <Pagination
-        size={size}
-        backwardText="Previous page"
-        forwardText="Next page"
-        itemsPerPageText="Items per page:"
-        onChange={function noRefCheck() {}}
+        size={"md"}
+        backwardText={"Previous page"}
+        forwardText={"Next page"}
+        itemsPerPageText={"Items per page:"}
+        onChange={() => {}}
         page={1}
         pageSize={10}
         pageSizes={[10, 20, 30, 40, 50]}

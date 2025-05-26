@@ -49,15 +49,25 @@ figma.connect(
         'Read-only': true,
       }),
     },
-    example: ({ ...props }) => <Checkbox id="your_checkbox_id" {...props} />,
+    example: ({ ...props }) =>  
+    <Checkbox 
+    id="checkbox_1" 
+    labelText={"label etext"}
+    checked={false} 
+    disabled={false} 
+    readOnly={false} 
+    indeterminate={false} 
+    invalid={false} 
+    warn={false} 
+  />,
   }
 );
 
-figma.connect(
-  Checkbox,
-  'https://www.figma.com/file/YAnB1jKx0yCUL29j6uSLpg/(v11)-All-themes---Carbon-Design-System?type=design&node-id=3193-29303&mode=design&t=QVE44xARq96HRr11-4',
-  {
-    variant: { State: 'Skeleton' },
-    example: () => <CheckboxSkeleton />,
-  }
-);
+// figma.connect(
+//   Checkbox,
+//   'https://www.figma.com/file/YAnB1jKx0yCUL29j6uSLpg/(v11)-All-themes---Carbon-Design-System?type=design&node-id=3193-29303&mode=design&t=QVE44xARq96HRr11-4',
+//   {
+//     variant: { State: 'Skeleton' },
+//     example: () => <CheckboxSkeleton />,
+//   }
+// );

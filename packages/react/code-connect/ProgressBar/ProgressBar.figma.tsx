@@ -41,14 +41,14 @@ figma.connect(
   {
     props: sharedProgressBarProps,
     example: ({ label, value, helperText, status, type, size }) => (
-      <ProgressBar
-        label={label}
-        value={value}
-        helperText={helperText}
-        status={status}
-        type={type}
-        size={size}
-      />
+    <ProgressBar
+      label={"Loading progress"}
+      value={50}
+      helperText={"Halfway there"}
+      status={"active"}
+      type={"inline"}
+      size={"big"}
+    />
     ),
   }
 );

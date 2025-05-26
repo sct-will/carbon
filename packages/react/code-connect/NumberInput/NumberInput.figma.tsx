@@ -58,18 +58,19 @@ figma.connect(
       warnText,
       numberInputbase,
     }) => (
-      <NumberInput
-        disabled={disabled}
-        helperText={helperText}
-        hideLabel={hideLabel}
-        invalid={invalid}
-        invalidText={invalidText}
-        label={label}
-        readOnly={readOnly}
-        size={size}
-        warn={warn}
-        warnText={warnText}
-        value={numberInputbase.value}
+    <NumberInput
+        id={"number-input-1"}
+        label={"Enter a number"}
+        helperText={"Provide a valid number"}
+        invalidText={"Invalid number"}
+        warnText={"Warning: Check input"}
+        size={"md"}
+        disabled={false}
+        invalid={false}
+        warn={false}
+        readOnly={false}
+        hideLabel={false}
+        value={0}
       />
     ),
   }

@@ -40,19 +40,15 @@ figma.connect(
     example: ({ align, open, popoverItem }) => {
       const [open, setOpen] = React.useState(false);
       return (
-        <Popover
-          align={align}
-          open={open}
-          caret={popoverItem.caret}
-          dropShadow={popoverItem.dropShadow}>
+        <Popover align={"top"} open={open} caret={true} dropShadow={true}>
           <button
-            type="button"
+            type={"button"}
             onClick={() => {
               setOpen(!open);
             }}>
             <Settings />
           </button>
-          <PopoverContent>{popoverItem.children}</PopoverContent>
+          <PopoverContent>{"Popover content goes here"}</PopoverContent>
         </Popover>
       );
     },
